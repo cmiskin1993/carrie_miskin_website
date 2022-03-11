@@ -1,0 +1,44 @@
+body {
+    background-color: #ffe8d6;
+  }
+  
+  h1 {
+    color: black;
+    font-family: "LEMONMILK-Light";
+    font-size: 60px;
+    margin-left: 70px;
+  }
+  
+  p{
+    font-family: "Helvetica";
+    font size: 50px;
+    margin: center;
+  }
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: #b7b7a4;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: #1b4332;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "LEMONMILK-Light";
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #6b705c;
+    color: white;
+  }
