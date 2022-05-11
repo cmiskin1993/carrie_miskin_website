@@ -1,44 +1,96 @@
-body {
-    background-color: #ffe8d6;
-  }
-  
-  h1 {
+* {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+}
+
+html, body{
+    height: 100%;
+    background-image: url("/Users/cnestel-admin/Development/Website/Images/Background-01.png")
+}
+
+/* NAV BAR */
+
+li, a, button{
+    font-family: "LEMONMILK-Light";
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+#logo {
+    cursor: pointer;
+    max-width: 30%;
+    max-height: 30%;
+    margin-right: auto;
+    object-fit: contain;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px, 10px;
+}
+.nav__links{
+    list-style: none;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+    color:rgb(254, 109, 179)
+}
+button {
+    margin-left: 50px;
+    padding: 9px 25px;
+    color: white;
+    background: linear-gradient(to bottom right, rgb(254, 109, 179), rgb(251, 117, 34));
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+button:hover {
+    background:rgb(254, 109, 179);
+}
+
+/* FIRST BOX */
+.wrapper1{
+    box-sizing: border-box;
+    margin: 50px;
+    padding: 50px;
+}
+
+.underline {
+    text-decoration: none;
+    position: relative;
+}
+.underline:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    border-width: 1.5px;
+    border-style: solid;
+    color: var(--accent);
+    animation-name: underline;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes underline {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+
+h1 {
     color: black;
     font-family: "LEMONMILK-Light";
     font-size: 60px;
-    margin-left: 70px;
-  }
-  
-  p{
-    font-family: "Helvetica";
-    font size: 50px;
-    margin: center;
-  }
-  
-  /* Add a black background color to the top navigation */
-  .topnav {
-    background-color: #b7b7a4;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: right;
-    color: #1b4332;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: "LEMONMILK-Light";
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    color: white;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #6b705c;
-    color: white;
-  }
+}
